@@ -1264,6 +1264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4337973623020369158}
   - component: {fileID: 7966728062482775032}
+  - component: {fileID: 9011871745297071744}
   m_Layer: 0
   m_Name: Accelerator
   m_TagString: Untagged
@@ -1299,5 +1300,17 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.025, z: 0.5}
+  m_Size: {x: 0.7, y: 0.025, z: 0.7}
   m_Center: {x: 0, y: 0.0125, z: 0}
+--- !u!114 &9011871745297071744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534482199585078825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97dfaa910a81d254da94ea9e6018d8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

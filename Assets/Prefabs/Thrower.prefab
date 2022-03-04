@@ -428,6 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869169765053835259}
   - component: {fileID: 2324986346229862519}
+  - component: {fileID: 7642784844429895719}
   m_Layer: 0
   m_Name: Thrower
   m_TagString: Untagged
@@ -464,8 +465,20 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.025, z: 0.5}
+  m_Size: {x: 0.7, y: 0.025, z: 0.7}
   m_Center: {x: 0, y: 0.0125, z: 0}
+--- !u!114 &7642784844429895719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869169765053835258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4d0968d7f44414e890c857a6c674ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3363888306352739307
 GameObject:
   m_ObjectHideFlags: 0
