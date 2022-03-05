@@ -28,6 +28,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     // Get the pooled object
     public GameObject GetPooledObject()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE
 public abstract class Base : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
@@ -11,5 +12,6 @@ public abstract class Base : MonoBehaviour
         }
     }
 
+    // POLYMORPHISM
     public abstract void OnTriggerHandler();
 }

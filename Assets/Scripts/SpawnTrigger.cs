@@ -1,11 +1,13 @@
 using UnityEngine;
 
+// INHERITANCE
 public class SpawnTrigger : Base
 {
     [SerializeField] Collider[] spawnAreas;
 
     bool hasSpawned = false;
 
+    // POLYMORPHISM
     // Spawn enemy wave on trigger
     public override void OnTriggerHandler()
     {
@@ -16,6 +18,7 @@ public class SpawnTrigger : Base
         }
     }
 
+    // ABSTRACTION
     // Spawn enemies in each spawn area
     void SpawnEnemyWave()
     {
@@ -31,6 +34,7 @@ public class SpawnTrigger : Base
         }
     }
 
+    // ABSTRACTION
     // Get a random spawn position in the given area
     Vector3 GetSpawnPos(Collider area)
     {

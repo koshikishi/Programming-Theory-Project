@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         public RecordEntry bestRecord;
     }
 
+    // ENCAPSULATION
     string _CurrentPlayer;
     public string CurrentPlayer
     {
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
         LoadRecord();
     }
 
+    // ABSTRACTION
     // Update the saved time record
     public void UpdateRecord(float time)
     {
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
         };
     }
 
+    // ABSTRACTION
     // Save the data to the file
     public void SaveRecord()
     {
@@ -77,6 +80,7 @@ public class GameManager : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
 
+    // ABSTRACTION
     // Load the data from the file
     public void LoadRecord()
     {

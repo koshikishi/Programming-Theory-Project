@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 
     const float speed = 2f;
 
+    // ENCAPSULATION
     Color _PlayerColor;
     public Color PlayerColor {
         get { return _PlayerColor; }
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour
         focalPoint.position = gameObject.transform.position;
     }
 
+    // ABSTRACTION
     // Change the player color
     public void ChangeColor(Color c)
     {

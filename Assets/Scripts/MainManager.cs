@@ -28,12 +28,14 @@ public class MainManager : MonoBehaviour
         }
     }
 
+    // ABSTRACTION
     // Update the current time text
     void UpdateCurrentTime()
     {
         currentRecordText.text = $"{GameManager.Instance.CurrentPlayer} - {Mathf.RoundToInt(currentTime)} s";
     }
 
+    // ABSTRACTION
     // Pause/resume the game
     public void TogglePause()
     {
@@ -58,6 +60,7 @@ public class MainManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    // ABSTRACTION
     // Finish the game
     public void GameOver()
     {
