@@ -6,8 +6,8 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager Instance { get; private set; }
 
     List<GameObject> pooledObjects;
-    public GameObject objectToPool;
-    public int amountToPool;
+    [SerializeField] GameObject objectToPool;
+    [SerializeField] int amountToPool;
 
     void Awake()
     {

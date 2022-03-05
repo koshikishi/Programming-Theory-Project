@@ -14,14 +14,17 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the enemy towards the player
-        Vector3 lookDirection = (PlayerController.Instance.transform.position - transform.position).normalized;
-        enemyRb.AddForce(speed * lookDirection);
-
-        // Limit the maximum speed of the enemy
-        if (enemyRb.velocity.magnitude > maxVelocity)
+        if (!GameManager.Instance.isGameOver && !GameManager.Instance.isGamePaused)
         {
-            enemyRb.velocity = enemyRb.velocity.normalized * maxVelocity;
+            // Move the enemy towards the player
+            Vector3 lookDirection = (PlayerController.Instance.transform.position - transform.position).normalized;
+            enemyRb.AddForce(speed * lookDirection);
+
+            // Limit the maximum speed of the enemy
+            if (enemyRb.velocity.magnitude > maxVelocity)
+            {
+                enemyRb.velocity = enemyRb.velocity.normalized * maxVelocity;
+            }
         }
     }
 
