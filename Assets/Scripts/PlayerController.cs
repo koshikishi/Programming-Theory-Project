@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Color _PlayerColor;
     public Color PlayerColor {
         get { return _PlayerColor; }
-        private set
+        set
         {
             if (value.a < 1f)
             {
@@ -40,9 +40,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the player forward and backward
-        float forwardInput = Input.GetAxis("Vertical");
-        playerRb.AddForce(speed * forwardInput * focalPoint.forward);
+        if (!GameManager.Instance.isGameOver && !GameManager.Instance.isGamePaused)
+        {
+            // Move the player forward and backward
+            float forwardInput = Input.GetAxis("Vertical");
+            playerRb.AddForce(speed * forwardInput * focalPoint.forward);
+        }
     }
 
     void LateUpdate()

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnTrigger : Base
 {
-    public Collider[] spawnAreas;
+    [SerializeField] Collider[] spawnAreas;
 
     bool hasSpawned = false;
 
